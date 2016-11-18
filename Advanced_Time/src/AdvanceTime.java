@@ -9,8 +9,7 @@ public class AdvanceTime extends SimpleTime{
 		set(h,m,s,0); 
 	} 
 	public void set(int h, int m, int s,int ms) {
-		super.set(h,m,s); 
-		setMillis(ms);
+		super.set(h,m,s); setMillis(ms);
 	} 
 	public void setMillis(int ms) {
 		if(ms<0 || ms>999) throw new IllegalArgumentException();
